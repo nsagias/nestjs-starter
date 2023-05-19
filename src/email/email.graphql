@@ -1,0 +1,24 @@
+type Email {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input CreateEmailInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input UpdateEmailInput {
+  id: Int!
+}
+
+type Query {
+  email: [Email]!
+  email(id: Int!): Email
+}
+
+type Mutation {
+  createEmail(createEmailInput: CreateEmailInput!): Email!
+  updateEmail(updateEmailInput: UpdateEmailInput!): Email!
+  removeEmail(id: Int!): Email
+}
