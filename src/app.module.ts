@@ -5,9 +5,10 @@ import { StarterModule } from './starter/starter.module';
 import { UsersModule } from './users/users.module';
 import { EmailModule } from './email/email.module';
 import { FavoritesModule } from './favorites/favorites.module';
+import { WeatherModule } from './weather/weather.module';
 
 @Module({
-  imports: [StarterModule, UsersModule, EmailModule, FavoritesModule],
+  imports: [StarterModule, UsersModule, EmailModule, FavoritesModule, WeatherModule],
   controllers: [AppController],
   providers: [AppService],
 })
