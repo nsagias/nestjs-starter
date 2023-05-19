@@ -6,9 +6,10 @@ import { UsersModule } from './users/users.module';
 import { EmailModule } from './email/email.module';
 import { FavoritesModule } from './favorites/favorites.module';
 import { WeatherModule } from './weather/weather.module';
+import { ChatModule } from './chat/chat.module';
 
 @Module({
-  imports: [StarterModule, UsersModule, EmailModule, FavoritesModule, WeatherModule],
+  imports: [StarterModule, UsersModule, EmailModule, FavoritesModule, WeatherModule, ChatModule],
   controllers: [AppController],
   providers: [AppService],
 })
