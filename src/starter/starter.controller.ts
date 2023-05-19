@@ -1,4 +1,5 @@
-import { Controller, Get, Param, Query } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common';
+import { CreateStarterDto } from './dto/create-starter.dto';
 
 @Controller('starter')
 export class StarterController {
@@ -22,5 +23,13 @@ export class StarterController {
       { userId: "1"},
       { userId: "2"}
     ];
+  }
+
+  // POST /starter
+  @Post()
+  createStarterDataItem(@Body() createStarterDto: CreateStarterDto) {
+    return {
+      name: createStarterDto.name
+    }
   }
 }
